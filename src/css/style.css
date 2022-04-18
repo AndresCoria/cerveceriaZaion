@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@400;600;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/logo-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 922px) {
+    header {
+        min-width: 100%;
+    }
+}
+@media screen and (max-width: 736px) {
+    header {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+
+nav .div-nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.bar-btn, .menu-btn {
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.ul-nav {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.ul-nav li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all 0.5s;
+}
+
+.ul-nav li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ul-nav li a.active, .ul-nav li a:hover {
+    color: rgb(248, 8, 8);
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .ul-nav {
+    height: 100vh;
+}
+
+#check:checked ~ .ul-nav li {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .div-nav {
+        background-color: rgba(0, 0, 0, 0.6);
+
+    }
+    .logo {
+        margin-left: 50px;
+    }
+
+    .nav-bar {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .ul-nav {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .ul-nav li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .ul-nav li a {
+        font-size: 12px;
+    }
+}
+
+/* footer */
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover{
+    text-decoration: none;
+    color: #25d366;
+    background-color:#fff;
+}                    
+.my-float{
+    margin-top:16px;
+}
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+style {
+    display: none !important;
+}
+
+/* POP UP */
+
+/* .modal {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    display: flex;
+
+    animation: modal 1s 2s  forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenido {
+    color: #FFF;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+}
+
+.contenido h1 {
+    font-size: 20px;
+}
+
+.logo-modal {
+    transition: all 0.5s ease-out;
+}
+.logo-modal:hover {
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+
+#cerrar {
+    display: none;
+}
+
+#cerrar + label {
+    position: fixed;
+    color: #fff;
+    font-size: 25px;
+    z-index: 60;
+    background: darkred;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+
+    animation: modal 1s 2s  forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+    display: none;
+}
+
+@keyframes modal {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .modal {
+        max-width: 100%;
+    }
+    .contenido h1 {
+        font-size: 12px;
+    }
+} */
+
+/* FIN POP UP */
+
+
+
+/*  EFECTO TEXTO MAQUINA DE ESCRIBIR */
+.text-efect {
+    margin: 15px;
+    padding: 10px;
+}
+
+.texto-efecto {
+    margin: auto;
+    display: table;
+}
+
+.texto-efecto h2 {
+    float: left;
+    color: #fff;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: #000;
+    border-left: 1px solid #fff;
+
+    animation: texto 5s infinite alternate steps(53);
+}
+
+@keyframes texto {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .text-efect {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .texto-efecto {
+        display: flex;
+        justify-content: center;
+    }
+    .texto-efecto h2 {
+        width: 75%;
+        font-size: 20px;
+    }
+    h2 span {
+        animation: none;
+        text-align: center;
+        visibility: hidden;
+    }
+}
+
+/* FIN EFECTO TEXTO MAQUINA DE ESCRIBIR */
+
+.container-h2 {
+    margin-top: 10%;
+}
+.container-h2 h2 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* EFECTO PARALLAX */
+
+.parallax {
+    margin-top: 25px;
+}
+.image1 {
+    position:relative;
+    background: url(../images/flor.jpeg) no-repeat fixed;
+    background-position: top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 992px) {
+    .parallax {
+        display: none;
+    }
+}
+
+p {
+    color: #fff;
+}
+
+/* FIN DE EFECTO PARALLAX */
+
+
+.container-text {
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.container-text h2 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    width: 75%;
+}
+
+
+.container-img-tres img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .container-text h2 {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        text-align: center;
+        padding-right: 15px;
+    }
+}
+
+.row1 .wasap {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.disclaimer {
+    display: none !important;
+}
+
+/* INICIO DE NOSOTROSHTML */
+
+.img-staff {
+    object-fit: cover;
+}
+/* FINAL DE NOSOTROS.HTML */
+
+/* INICIO DE CONTACTO.HTML */
+
+/* Contacto */
+#contacto {
+    color: white;
+    text-align: center;
+    position: relative;
+    
+}
+#contacto .titulo-contacto {
+    font-size: 2em;
+    margin-left: 40px;
+}
+.logo-contacto {
+    margin-left: 30px;
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    #contacto .titulo-contacto {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 570px) {
+        #contacto .titulo-contacto {
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+        #contacto .titulo-contacto {
+        font-size: 4.5em;
+    }
+}
+#contacto p {
+    font-size: 1em;
+    padding: 0.5em 0;
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+        #contacto p {
+        font-size: 0.7em;
+        padding: 0.4em 1.5em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 570px) {
+        #contacto p {
+        font-size: 0.7em;
+        padding: 0.5em 1.5em;
+    }
+}
+@media screen and (min-width: 571px) and (max-width: 960px) {
+        #contacto p {
+        padding: 0.5em 1.5em;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+        #contacto p {
+        font-size: 2.2em;
+        padding: 0.5em 1.5em;
+    }
+}
+#contacto img {
+    width: 21.625em;
+    padding: 1.5rem 0 1rem 0;
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+        #contacto img {
+        width: 11.625em;
+        padding: 1.5rem 0;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 570px) {
+        #contacto img {
+        width: 15.625em;
+        padding: 1.5rem 0;
+    }
+}
+@media screen and (min-width: 571px) and (max-width: 960px) {
+        #contacto img {
+        width: 16.625em;
+        padding: 1.5rem 0;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+        #contacto img {
+        width: 50.625em;
+        padding: 2.5rem 0;
+    }
+}
+
+/* Formulario */
+.contact_form {
+    width: auto;
+    height: auto;
+    padding: 1em 0;
+}
+.contact_form ul li {
+    list-style: none;
+}
+.contact_form ul li #suscribe {
+    width: 1rem;
+    margin: 0 0.4rem 0 0;
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+    .contact_form ul li #suscribe {
+        width: 2rem;
+    }
+}
+.contact_form ul li label {
+    display: block;
+    float: center;
+}
+.contact_form ul li label:last-child {
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .contact_form ul li label:last-child {
+        font-size: 0.6em;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+    .contact_form ul li label:last-child {
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .contact_form ul li label {
+        font-size: 0.8em;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+    .contact_form ul li label {
+        font-size: 3.2em;
+        padding: 0.5rem 0;
+    }
+}
+.contact_form ul li input {
+    background-color: #e2e2e2;
+    width: 41.5%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.5s;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.contact_form ul li input:focus {
+    border: 4px solid #70D70C;
+    border: 4px solid red;
+    background-color: white;
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .contact_form ul li input {
+        height: 27px;
+        width: 65%;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 570px) {
+    .contact_form ul li input {
+        width: 65%;
+    }
+}
+@media screen and (min-width: 571px) and (max-width: 960px) {
+    .contact_form ul li input {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+    .contact_form ul li input {
+        height: 4.5rem;
+        width: 54%;
+        font-size: 1.8em;
+    }
+}
+.contact_form ul li textarea {
+    background-color: #e2e2e2;
+    width: 41.5%;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.contact_form ul li textarea:focus {
+    border: 4px solid red;
+    background-color: white;
+    color: black;
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .contact_form ul li textarea {
+        width: 65%;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 570px) {
+    .contact_form ul li textarea {
+        width: 65%;
+    }
+}
+@media screen and (min-width: 571px) and (max-width: 960px) {
+    .contact_form ul li textarea {
+        width: 55%;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+    .contact_form ul li textarea {
+        height: 19rem;
+        width: 54%;
+        font-size: 1.8em;
+    }
+}
+.contact_form ul li button {
+    height: 45px;
+    padding: 0 5px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    background-color: red;
+    border-color: red;
+    border-style: solid;
+    border-radius: 10px;
+    width: 33%;
+    cursor: pointer;
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 0.9em;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bolder;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.contact_form ul li button:hover {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .contact_form ul li button {
+        height: 35px;
+    }
+}
+@media screen and (min-width: 2560px) and (max-width: 8000px) {
+    .contact_form ul li button {
+        height: 80px;
+        width: 15%;
+        font-size: 1.88em;
+        margin: 1em 0;
+    }
+}
+
+/* PRODUCTOS.HTML*/
+
+.titulo_productos {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.imgContainer {
+    margin: 20px;
+    padding: 10px;
+}
+
+.margenes {
+    margin: 15px;
+    padding: 5px;
+}
+
+.texto_cards {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+
+/* CARRITO */ 
+
+.text-principal, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text-carrito {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text-productos, .template-texto {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    
+}
+
+h5 {
+    color: #000;
+}
+
+
