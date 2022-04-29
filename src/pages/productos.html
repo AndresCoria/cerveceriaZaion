@@ -43,6 +43,10 @@
         </nav>
     </header>
 
+    <!-- aqui esta el contenedor principal de los productos y dentro de este tenemos un div
+    que sera el contenedor del template donde se mostraran los productos, 
+    el otro div es el que contiene la parte del
+    footer donde se veran las cantidades de productos y el total a pagar -->
     <section class="container">
         <h1 class="text-center text-principal mt-4">Disfruta de nuestros mejores productos</h1>
 
@@ -69,7 +73,8 @@
             </table>
         </div>
     </section>
-
+    <!-- Aqui en este template se mostrara el valor total del importe y el boton para
+    vaciar el carrito -->
     <template id="template-footer">
         <th scope="row" colspan="2">Total productos</th>
         <td>10</td>
@@ -80,7 +85,8 @@
         </td>
         <td class="font-weight-bold">$ <span>5000</span></td>
     </template>
-    
+    <!-- este template es que que nos muestra los productos a medida que se va
+        presionando el boton de agregar -->
     <template id="template-carrito">
         <tr class="template-texto">
         <th scope="row">id</th>
@@ -97,7 +103,7 @@
         <td>$ <span>500</span></td>
         </tr>
     </template>
-
+    <!-- template donde se encuentra la tabla donde se mostraram los productos. -->
     <template id="template-productos">
         <div class="col-12 col-md-4 mb-3">
             <div class="card">
@@ -105,10 +111,9 @@
                 <div class="card-body">
                 <h5 class="card-title">titulo</h5>
                 <p class="card-text text-black-50">$ <span>500</span></p>
-                <button href="#" class="btn btn-dark">Comprar</button >
+                <button href="#" class="btn btn-dark">Agregar</button >
             </div>
         </div>
-        <!-- </div> -->
     </template>
 
     <footer class="container py-3 my-4">
